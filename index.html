@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urano Software</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="brand">
+        <img src="logo-urano.jpeg" alt="Urano Software" />
+        <span>URANO SOFTWARE</span>
+      </div>
+
+      <nav>
+        <a href="#servicios" data-i18n="nav.services"></a>
+        <a href="#tecnologias" data-i18n="nav.tech"></a>
+        <a href="#contacto" data-i18n="nav.contact"></a>
+        <button id="changeLang" class="lang-btn" type="button">EN</button>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div>
+        <h1 data-i18n="hero.title"></h1>
+
+        <p data-i18n="hero.description"></p>
+
+        <div class="actions">
+          <a
+            class="btn btn-primary"
+            href="#contacto"
+            data-i18n="hero.contact"
+          ></a>
+
+          <a
+            class="btn btn-secondary"
+            href="#servicios"
+            data-i18n="hero.services"
+          ></a>
+        </div>
+      </div>
+
+      <div class="visual">
+        <img src="logo-urano.jpeg" alt="Logo Urano Software" />
+      </div>
+    </main>
+
+    <section id="servicios">
+      <h2 class="section-title" data-i18n="services.title"></h2>
+
+      <div class="swiper servicios-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card">
+            <h3 data-i18n="services.custom.title"></h3>
+            <p data-i18n="services.custom.description"></p>
+          </div>
+
+          <div class="swiper-slide card">
+            <h3 data-i18n="services.automation.title"></h3>
+            <p data-i18n="services.automation.description"></p>
+          </div>
+
+          <div class="swiper-slide card">
+            <h3 data-i18n="services.api.title"></h3>
+            <p data-i18n="services.api.description"></p>
+          </div>
+
+          <div class="swiper-slide card">
+            <h3 data-i18n="services.scalable.title"></h3>
+            <p data-i18n="services.scalable.description"></p>
+          </div>
+
+          <div class="swiper-slide card">
+            <h3 data-i18n="services.scada.title"></h3>
+            <p data-i18n="services.scada.description"></p>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="contact">
+        <h2 class="section-title" data-i18n="contact.title"></h2>
+
+        <p data-i18n="contact.description"></p>
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/5490000000000"
+          target="_blank"
+          data-i18n="contact.whatsapp"
+        ></a>
+      </div>
+    </section>
+
+    <footer data-i18n="footer"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/i18next@23.11.5/i18next.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
