@@ -54,7 +54,7 @@ const resources = {
         title: "¿Querés mejorar tus procesos?",
         description:
           "Si tu negocio trabaja con tareas manuales, sistemas desconectados o procesos difíciles de seguir, podemos ayudarte a crear una solución clara, simple y escalable.",
-        whatsapp: "Escribir por WhatsApp",
+        email: "Envial email",
       },
 
       footer: `© ${new Date().getFullYear()} Urano Software — Automatización, APIs e integración de sistemas.`,
@@ -111,7 +111,7 @@ const resources = {
         title: "Want to improve your processes?",
         description:
           "If your business works with disconnected systems or manual processes, we can help.",
-        whatsapp: "Message us on WhatsApp",
+        email: "Send email",
       },
 
       footer: `© ${new Date().getFullYear()} Urano Software — Automation, APIs and systems integration.`,
