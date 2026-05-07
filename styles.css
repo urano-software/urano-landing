@@ -248,6 +248,46 @@ nav {
   color: white;
   transform: translateY(-1px);
 }
+.instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 24px;
+
+  padding: 14px 24px;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+  font-size: 15px;
+
+  color: white;
+
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+
+  transition: all 0.25s ease;
+
+  box-shadow: 0 10px 30px rgba(253, 29, 29, 0.25);
+}
+
+.instagram-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 14px 40px rgba(253, 29, 29, 0.35);
+}
+
+.instagram-btn svg {
+  width: 20px;
+  height: 20px;
+
+  flex-shrink: 0;
+
+  color: white;
+}
 @media (max-width: 900px) {
   header {
     flex-direction: column;
