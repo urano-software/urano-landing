@@ -1,5 +1,3 @@
-document.getElementById("year")?.remove();
-
 const resources = {
   es: {
     translation: {
@@ -10,15 +8,20 @@ const resources = {
       },
 
       hero: {
-        title: "Software a medida para negocios que quieren crecer.",
+        badge: "Desarrollo a medida",
+        title: "Software para negocios que quieren crecer.",
         description:
           "Desarrollamos APIs, automatizaciones, integraciones y herramientas internas para reducir tareas manuales, conectar sistemas y mejorar procesos.",
         contact: "Contactanos",
         services: "Ver servicios",
+        stat1: "Proyectos",
+        stat2: "Años de experiencia",
+        stat3: "A medida",
       },
 
       services: {
-        title: "Qué hacemos en Urano",
+        label: "¿Qué hacemos?",
+        title: "Servicios de Urano",
 
         custom: {
           title: "Desarrollo a medida",
@@ -50,11 +53,14 @@ const resources = {
         },
       },
 
+      tech: {
+        label: "Stack tecnológico",
+      },
+
       contact: {
         title: "¿Querés mejorar tus procesos?",
         description:
           "Si tu negocio trabaja con tareas manuales, sistemas desconectados o procesos difíciles de seguir, podemos ayudarte a crear una solución clara, simple y escalable.",
-        email: "Envial email",
       },
 
       footer: `© ${new Date().getFullYear()} Urano Software — Automatización, APIs e integración de sistemas.`,
@@ -70,15 +76,20 @@ const resources = {
       },
 
       hero: {
+        badge: "Custom development",
         title: "Custom software for businesses that want to grow.",
         description:
           "We build APIs, automations, integrations and internal tools to reduce manual tasks and improve processes.",
         contact: "Contact us",
         services: "View services",
+        stat1: "Projects",
+        stat2: "Years of experience",
+        stat3: "Custom built",
       },
 
       services: {
-        title: "What we do at Urano",
+        label: "What we do",
+        title: "Urano Services",
 
         custom: {
           title: "Custom Development",
@@ -107,11 +118,14 @@ const resources = {
         },
       },
 
+      tech: {
+        label: "Tech stack",
+      },
+
       contact: {
         title: "Want to improve your processes?",
         description:
-          "If your business works with disconnected systems or manual processes, we can help.",
-        email: "Send email",
+          "If your business works with disconnected systems or manual processes, we can help you build a clear, simple and scalable solution.",
       },
 
       footer: `© ${new Date().getFullYear()} Urano Software — Automation, APIs and systems integration.`,
@@ -132,7 +146,6 @@ i18next.init(
 function updateContent() {
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.getAttribute("data-i18n");
-
     element.textContent = i18next.t(key);
   });
 }
@@ -142,7 +155,6 @@ document.getElementById("changeLang").addEventListener("click", () => {
 
   i18next.changeLanguage(newLang, () => {
     updateContent();
-
     document.getElementById("changeLang").textContent =
       newLang === "es" ? "EN" : "ES";
   });
@@ -154,14 +166,16 @@ new Swiper(".servicios-swiper", {
   spaceBetween: 24,
   loop: true,
 
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -172,12 +186,10 @@ new Swiper(".servicios-swiper", {
       slidesPerView: 1,
       slidesPerGroup: 1,
     },
-
     768: {
       slidesPerView: 2,
       slidesPerGroup: 2,
     },
-
     1024: {
       slidesPerView: 3,
       slidesPerGroup: 3,
@@ -185,6 +197,7 @@ new Swiper(".servicios-swiper", {
   },
 });
 
+// Scroll progress bar
 const scrollBar = document.getElementById("scroll-bar");
 
 window.addEventListener("scroll", () => {
@@ -194,8 +207,9 @@ window.addEventListener("scroll", () => {
   scrollBar.style.width = progress + "%";
 });
 
+// Scroll reveal
 const revealElements = document.querySelectorAll(
-  "section, .hero, .card, .tech, .contact, footer",
+  "section, .hero, .card, .tech, .contact, footer, .hero-mini-card",
 );
 
 revealElements.forEach((el) => el.classList.add("reveal"));
@@ -205,6 +219,7 @@ const observer = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
       }
     });
   },

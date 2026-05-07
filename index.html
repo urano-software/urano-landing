@@ -14,6 +14,7 @@
 
   <body>
     <div id="scroll-bar"></div>
+
     <header>
       <div class="brand">
         <img src="logo-urano.jpeg" alt="Urano Software" />
@@ -30,6 +31,11 @@
 
     <main class="hero">
       <div>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span data-i18n="hero.badge"></span>
+        </div>
+
         <h1 data-i18n="hero.title"></h1>
 
         <p data-i18n="hero.description"></p>
@@ -40,21 +46,56 @@
             href="#contacto"
             data-i18n="hero.contact"
           ></a>
-
           <a
             class="btn btn-secondary"
             href="#servicios"
             data-i18n="hero.services"
           ></a>
         </div>
+
+        <div class="hero-stats">
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label" data-i18n="hero.stat2"></span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label" data-i18n="hero.stat3"></span>
+          </div>
+        </div>
       </div>
 
       <div class="visual">
-        <img src="logo-urano.jpeg" alt="Logo Urano Software" />
+        <div class="hero-cards">
+          <div class="hero-mini-card">
+            <div class="hero-mini-top">
+              <div class="mini-icon">⚡</div>
+              <span data-i18n="services.automation.title"></span>
+            </div>
+            <p data-i18n="services.automation.description"></p>
+          </div>
+          <div class="hero-mini-card">
+            <div class="hero-mini-top">
+              <div class="mini-icon">🔗</div>
+              <span data-i18n="services.api.title"></span>
+            </div>
+            <p data-i18n="services.api.description"></p>
+          </div>
+          <div class="hero-mini-card">
+            <div class="hero-mini-top">
+              <div class="mini-icon">🖥️</div>
+              <span data-i18n="services.scada.title"></span>
+            </div>
+            <p data-i18n="services.scada.description"></p>
+          </div>
+        </div>
       </div>
     </main>
 
     <section id="servicios">
+      <div class="section-label" data-i18n="services.label"></div>
       <h2 class="section-title" data-i18n="services.title"></h2>
 
       <div class="swiper servicios-swiper">
@@ -95,23 +136,27 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
+
     <section id="tecnologias" class="techs">
+      <div class="section-label" data-i18n="tech.label"></div>
       <h2 class="section-title" data-i18n="nav.tech"></h2>
 
-      <span class="tech">.NET</span>
-      <span class="tech">SQL Server</span>
-      <span class="tech">APIs REST</span>
-      <span class="tech">RabbitMQ</span>
-      <span class="tech">SignalR</span>
-      <span class="tech">Docker</span>
-      <span class="tech">JavaScript</span>
-      <span class="tech">AWS</span>
-      <span class="tech">SCADA</span>
+      <div class="techs-grid">
+        <span class="tech">.NET</span>
+        <span class="tech">SQL Server</span>
+        <span class="tech">APIs REST</span>
+        <span class="tech">RabbitMQ</span>
+        <span class="tech">SignalR</span>
+        <span class="tech">Docker</span>
+        <span class="tech">JavaScript</span>
+        <span class="tech">AWS</span>
+        <span class="tech">SCADA</span>
+      </div>
     </section>
+
     <section id="contacto">
       <div class="contact">
         <h2 class="section-title" data-i18n="contact.title"></h2>
-
         <p data-i18n="contact.description"></p>
 
         <a
@@ -128,13 +173,13 @@
               d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
             />
           </svg>
-
           <span>Instagram</span>
         </a>
       </div>
     </section>
 
     <footer data-i18n="footer"></footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/i18next@23.11.5/i18next.min.js"></script>
     <script src="script.js"></script>
