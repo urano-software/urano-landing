@@ -158,7 +158,10 @@ new Swiper(".servicios-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -181,3 +184,31 @@ new Swiper(".servicios-swiper", {
     },
   },
 });
+
+const scrollBar = document.getElementById("scroll-bar");
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = (scrollTop / docHeight) * 100;
+  scrollBar.style.width = progress + "%";
+});
+
+const revealElements = document.querySelectorAll(
+  "section, .hero, .card, .tech, .contact, footer",
+);
+
+revealElements.forEach((el) => el.classList.add("reveal"));
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  },
+  { threshold: 0.12 },
+);
+
+revealElements.forEach((el) => observer.observe(el));
