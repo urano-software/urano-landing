@@ -3,183 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Urano Software</title>
+    <meta name="description" content="Automatizamos tareas, conectamos sistemas y creamos software a medida para que tu negocio ahorre tiempo, reduzca errores y pueda crecer." />
+    <title>Urano Software | Menos tareas manuales. Más crecimiento.</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
-
   <body>
     <div id="scroll-bar"></div>
 
     <header>
-      <div class="brand">
-        <img src="logo-urano.jpeg" alt="Urano Software" />
+      <a class="brand" href="#inicio" aria-label="Urano Software, inicio">
+        <img src="logo-urano.jpeg" alt="" />
         <span>URANO SOFTWARE</span>
-      </div>
-
+      </a>
       <nav>
-        <a href="#servicios" data-i18n="nav.services"></a>
-        <a href="#tecnologias" data-i18n="nav.tech"></a>
-        <a href="#contacto" data-i18n="nav.contact"></a>
-        <button id="changeLang" class="lang-btn" type="button">EN</button>
+        <a href="#problemas" data-i18n="nav.problems"></a>
+        <a href="#soluciones" data-i18n="nav.solutions"></a>
+        <a href="#proceso" data-i18n="nav.process"></a>
+        <a class="nav-cta" href="#contacto" data-i18n="nav.contact"></a>
+        <button id="changeLang" class="lang-btn" type="button" aria-label="Cambiar idioma">EN</button>
       </nav>
     </header>
 
-    <main class="hero">
+    <main id="inicio" class="hero">
       <div>
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          <span data-i18n="hero.badge"></span>
-        </div>
-
-        <h1 data-i18n="hero.title"></h1>
-
+        <div class="hero-badge"><span class="badge-dot"></span><span data-i18n="hero.badge"></span></div>
+        <h1 data-i18n-html="hero.title"></h1>
         <p data-i18n="hero.description"></p>
-
         <div class="actions">
-          <a
-            class="btn btn-primary"
-            href="#contacto"
-            data-i18n="hero.contact"
-          ></a>
-          <a
-            class="btn btn-secondary"
-            href="#servicios"
-            data-i18n="hero.services"
-          ></a>
+          <a class="btn btn-primary" href="#contacto" data-i18n="hero.contact"></a>
+          <a class="btn btn-secondary" href="#problemas" data-i18n="hero.problems"></a>
         </div>
-
-        <div class="hero-stats">
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-num">5+</span>
-            <span class="stat-label" data-i18n="hero.stat2"></span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat">
-            <span class="stat-num">100%</span>
-            <span class="stat-label" data-i18n="hero.stat3"></span>
-          </div>
-        </div>
+        <div class="microcopy" data-i18n="hero.microcopy"></div>
       </div>
 
-      <div class="visual">
-        <div class="hero-cards">
-          <div class="hero-mini-card">
-            <div class="hero-mini-top">
-              <div class="mini-icon">⚡</div>
-              <span data-i18n="services.automation.title"></span>
-            </div>
-            <p data-i18n="services.automation.description"></p>
-          </div>
-          <div class="hero-mini-card">
-            <div class="hero-mini-top">
-              <div class="mini-icon">🔗</div>
-              <span data-i18n="services.api.title"></span>
-            </div>
-            <p data-i18n="services.api.description"></p>
-          </div>
-          <div class="hero-mini-card">
-            <div class="hero-mini-top">
-              <div class="mini-icon">🖥️</div>
-              <span data-i18n="services.scada.title"></span>
-            </div>
-            <p data-i18n="services.scada.description"></p>
+      <div class="visual" aria-label="Resultados que buscamos para tu negocio">
+        <div class="result-card featured">
+          <span class="result-kicker" data-i18n="hero.before"></span>
+          <strong data-i18n="hero.beforeText"></strong>
+        </div>
+        <div class="flow-line"><span></span></div>
+        <div class="result-card">
+          <span class="result-kicker cyan" data-i18n="hero.after"></span>
+          <strong data-i18n="hero.afterText"></strong>
+          <div class="result-tags">
+            <span data-i18n="hero.tag1"></span><span data-i18n="hero.tag2"></span><span data-i18n="hero.tag3"></span>
           </div>
         </div>
       </div>
     </main>
 
-    <section id="servicios">
-      <div class="section-label" data-i18n="services.label"></div>
-      <h2 class="section-title" data-i18n="services.title"></h2>
+    <section id="problemas" class="problems-section">
+      <div class="section-label" data-i18n="problems.label"></div>
+      <h2 class="section-title" data-i18n="problems.title"></h2>
+      <p class="section-intro" data-i18n="problems.intro"></p>
+      <div class="pain-grid">
+        <article class="pain-card"><span class="pain-number">01</span><h3 data-i18n="problems.manual.title"></h3><p data-i18n="problems.manual.description"></p></article>
+        <article class="pain-card"><span class="pain-number">02</span><h3 data-i18n="problems.disconnected.title"></h3><p data-i18n="problems.disconnected.description"></p></article>
+        <article class="pain-card"><span class="pain-number">03</span><h3 data-i18n="problems.blind.title"></h3><p data-i18n="problems.blind.description"></p></article>
+      </div>
+      <div class="pain-cta"><p data-i18n="problems.close"></p><a href="#contacto" data-i18n="problems.cta"></a></div>
+    </section>
 
+    <section id="soluciones">
+      <div class="section-label" data-i18n="solutions.label"></div>
+      <h2 class="section-title" data-i18n="solutions.title"></h2>
       <div class="swiper servicios-swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide card">
-            <div class="card-icon">⚙️</div>
-            <h3 data-i18n="services.custom.title"></h3>
-            <p data-i18n="services.custom.description"></p>
-          </div>
-
-          <div class="swiper-slide card">
-            <div class="card-icon">⚡</div>
-            <h3 data-i18n="services.automation.title"></h3>
-            <p data-i18n="services.automation.description"></p>
-          </div>
-
-          <div class="swiper-slide card">
-            <div class="card-icon">🔗</div>
-            <h3 data-i18n="services.api.title"></h3>
-            <p data-i18n="services.api.description"></p>
-          </div>
-
-          <div class="swiper-slide card">
-            <div class="card-icon">📐</div>
-            <h3 data-i18n="services.scalable.title"></h3>
-            <p data-i18n="services.scalable.description"></p>
-          </div>
-
-          <div class="swiper-slide card">
-            <div class="card-icon">🖥️</div>
-            <h3 data-i18n="services.scada.title"></h3>
-            <p data-i18n="services.scada.description"></p>
-          </div>
+          <article class="swiper-slide card"><div class="card-icon">↻</div><h3 data-i18n="solutions.automation.title"></h3><p data-i18n="solutions.automation.description"></p><span class="card-result" data-i18n="solutions.automation.result"></span></article>
+          <article class="swiper-slide card"><div class="card-icon">⌁</div><h3 data-i18n="solutions.integration.title"></h3><p data-i18n="solutions.integration.description"></p><span class="card-result" data-i18n="solutions.integration.result"></span></article>
+          <article class="swiper-slide card"><div class="card-icon">◇</div><h3 data-i18n="solutions.custom.title"></h3><p data-i18n="solutions.custom.description"></p><span class="card-result" data-i18n="solutions.custom.result"></span></article>
+          <article class="swiper-slide card"><div class="card-icon">▦</div><h3 data-i18n="solutions.control.title"></h3><p data-i18n="solutions.control.description"></p><span class="card-result" data-i18n="solutions.control.result"></span></article>
         </div>
-
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div><div class="swiper-button-next"></div><div class="swiper-pagination"></div>
       </div>
     </section>
 
-    <section id="tecnologias" class="techs">
-      <div class="section-label" data-i18n="tech.label"></div>
-      <h2 class="section-title" data-i18n="nav.tech"></h2>
-
-      <div class="techs-grid">
-        <span class="tech">.NET</span>
-        <span class="tech">SQL Server</span>
-        <span class="tech">APIs REST</span>
-        <span class="tech">RabbitMQ</span>
-        <span class="tech">SignalR</span>
-        <span class="tech">Docker</span>
-        <span class="tech">JavaScript</span>
-        <span class="tech">AWS</span>
-        <span class="tech">SCADA</span>
+    <section id="proceso" class="process-section">
+      <div class="section-label" data-i18n="process.label"></div>
+      <h2 class="section-title" data-i18n="process.title"></h2>
+      <div class="process-grid">
+        <article><span>1</span><h3 data-i18n="process.step1.title"></h3><p data-i18n="process.step1.description"></p></article>
+        <article><span>2</span><h3 data-i18n="process.step2.title"></h3><p data-i18n="process.step2.description"></p></article>
+        <article><span>3</span><h3 data-i18n="process.step3.title"></h3><p data-i18n="process.step3.description"></p></article>
       </div>
     </section>
 
     <section id="contacto">
       <div class="contact">
+        <div class="section-label" data-i18n="contact.label"></div>
         <h2 class="section-title" data-i18n="contact.title"></h2>
         <p data-i18n="contact.description"></p>
-
-        <a
-          class="instagram-btn"
-          href="https://instagram.com/urano_software"
-          target="_blank"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-          >
-            <path
-              d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
-            />
-          </svg>
-          <span>Instagram</span>
-        </a>
+        <form class="contact-form" action="https://formsubmit.co/softwareurano@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nueva consulta desde la web de Urano Software" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input class="form-trap" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="form-row">
+            <label><span data-i18n="contact.name"></span><input type="text" name="Nombre" required autocomplete="name" data-i18n-placeholder="contact.namePlaceholder" /></label>
+            <label><span data-i18n="contact.email"></span><input type="email" name="Email" required autocomplete="email" data-i18n-placeholder="contact.emailPlaceholder" /></label>
+          </div>
+          <label><span data-i18n="contact.business"></span><input type="text" name="Empresa" autocomplete="organization" data-i18n-placeholder="contact.businessPlaceholder" /></label>
+          <label><span data-i18n="contact.problem"></span><textarea name="Problema o proceso a mejorar" rows="5" required minlength="15" data-i18n-placeholder="contact.problemPlaceholder"></textarea></label>
+          <button class="submit-btn" type="submit"><span data-i18n="contact.cta"></span><span aria-hidden="true">→</span></button>
+          <small data-i18n="contact.note"></small>
+        </form>
       </div>
     </section>
 
     <footer data-i18n="footer"></footer>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/i18next@23.11.5/i18next.min.js"></script>
     <script src="script.js"></script>

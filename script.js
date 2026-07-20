@@ -1,229 +1,45 @@
 const resources = {
-  es: {
-    translation: {
-      nav: {
-        services: "Servicios",
-        tech: "Tecnologías",
-        contact: "Contacto",
-      },
-
-      hero: {
-        badge: "Desarrollo a medida",
-        title: "Software para negocios que quieren crecer.",
-        description:
-          "Desarrollamos APIs, automatizaciones, integraciones y herramientas internas para reducir tareas manuales, conectar sistemas y mejorar procesos.",
-        contact: "Contactanos",
-        services: "Ver servicios",
-        stat1: "Proyectos",
-        stat2: "Años de experiencia",
-        stat3: "A medida",
-      },
-
-      services: {
-        label: "¿Qué hacemos?",
-        title: "Servicios de Urano",
-
-        custom: {
-          title: "Desarrollo a medida",
-          description:
-            "Sistemas, módulos y soluciones pensadas para procesos concretos de tu negocio.",
-        },
-
-        automation: {
-          title: "Automatización",
-          description:
-            "Reducimos tareas repetitivas, carga manual de datos y procesos lentos.",
-        },
-
-        api: {
-          title: "Integraciones y APIs",
-          description:
-            "Conectamos sistemas, bases de datos, servicios externos y plataformas internas.",
-        },
-
-        scalable: {
-          title: "Soluciones escalables",
-          description:
-            "Arquitectura backend preparada para crecer, auditar, monitorear y evolucionar.",
-        },
-
-        scada: {
-          title: "Soluciones SCADA",
-          description: "Nos especializamos en dashboards y desarrollo SCADA.",
-        },
-      },
-
-      tech: {
-        label: "Stack tecnológico",
-      },
-
-      contact: {
-        title: "¿Querés mejorar tus procesos?",
-        description:
-          "Si tu negocio trabaja con tareas manuales, sistemas desconectados o procesos difíciles de seguir, podemos ayudarte a crear una solución clara, simple y escalable.",
-      },
-
-      footer: `© ${new Date().getFullYear()} Urano Software — Automatización, APIs e integración de sistemas.`,
-    },
-  },
-
-  en: {
-    translation: {
-      nav: {
-        services: "Services",
-        tech: "Technologies",
-        contact: "Contact",
-      },
-
-      hero: {
-        badge: "Custom development",
-        title: "Custom software for businesses that want to grow.",
-        description:
-          "We build APIs, automations, integrations and internal tools to reduce manual tasks and improve processes.",
-        contact: "Contact us",
-        services: "View services",
-        stat1: "Projects",
-        stat2: "Years of experience",
-        stat3: "Custom built",
-      },
-
-      services: {
-        label: "What we do",
-        title: "Urano Services",
-
-        custom: {
-          title: "Custom Development",
-          description:
-            "Systems and solutions tailored to your business processes.",
-        },
-
-        automation: {
-          title: "Automation",
-          description: "We reduce repetitive tasks and manual workflows.",
-        },
-
-        api: {
-          title: "APIs & Integrations",
-          description: "We connect systems, databases and external services.",
-        },
-
-        scalable: {
-          title: "Scalable Solutions",
-          description: "Backend architectures ready to grow and evolve.",
-        },
-
-        scada: {
-          title: "SCADA Solutions",
-          description: "We specialize in SCADA dashboards and development.",
-        },
-      },
-
-      tech: {
-        label: "Tech stack",
-      },
-
-      contact: {
-        title: "Want to improve your processes?",
-        description:
-          "If your business works with disconnected systems or manual processes, we can help you build a clear, simple and scalable solution.",
-      },
-
-      footer: `© ${new Date().getFullYear()} Urano Software — Automation, APIs and systems integration.`,
-    },
-  },
+  es: { translation: {
+    nav: { problems: "¿Te pasa esto?", solutions: "Soluciones", process: "Cómo trabajamos", contact: "Hablemos" },
+    hero: { badge: "Software que elimina trabajo innecesario", title: "Tu negocio no debería perder tiempo en tareas que el software puede hacer <span>por vos.</span>", description: "Automatizamos tareas, conectamos sistemas y creamos herramientas a medida para que tu equipo trabaje más rápido, con menos errores y más control.", contact: "Contanos tu problema", problems: "Ver si esto es para mí", microcopy: "Sin compromiso · Te respondemos personalmente", before: "HOY", beforeText: "Planillas, carga manual, errores y sistemas que no se hablan.", after: "CON URANO", afterText: "Un proceso simple, conectado y listo para crecer.", tag1: "Menos tiempo perdido", tag2: "Menos errores", tag3: "Más control" },
+    problems: { label: "El costo de seguir igual", title: "¿Tu negocio creció, pero tus procesos quedaron atrás?", intro: "Estas señales parecen normales hasta que calculás las horas, oportunidades y dinero que se pierden cada mes.", manual: { title: "Tu equipo repite tareas", description: "Copiar datos, actualizar planillas o hacer controles manuales consume horas que podrían usarse para vender, producir o atender mejor." }, disconnected: { title: "La información está repartida", description: "Cada área usa una herramienta distinta. Los datos se duplican, se pierden y nadie tiene una visión completa." }, blind: { title: "Decidís tarde o sin datos", description: "No sabés qué está pasando hasta que aparece un problema. Sin información clara, reaccionás en vez de anticiparte." }, close: "Si reconociste al menos una, ya hay una oportunidad concreta de mejora.", cta: "Quiero saber qué puedo automatizar →" },
+    solutions: { label: "Cómo te ayudamos", title: "No vendemos tecnología: resolvemos cuellos de botella.", automation: { title: "Automatizamos lo repetitivo", description: "Hacemos que las tareas rutinarias ocurran solas, con reglas claras y sin depender de una persona.", result: "Resultado: recuperás horas de trabajo" }, integration: { title: "Conectamos tus sistemas", description: "Integramos plataformas, bases de datos y servicios para que la información fluya sin copiar y pegar.", result: "Resultado: una operación sin datos duplicados" }, custom: { title: "Creamos tu herramienta", description: "Desarrollamos software adaptado a la forma real en la que funciona tu empresa, no al revés.", result: "Resultado: un sistema que tu equipo sí usa" }, control: { title: "Convertimos datos en control", description: "Creamos paneles y soluciones SCADA para ver lo importante y actuar antes de que el problema crezca.", result: "Resultado: decisiones rápidas y claras" } },
+    process: { label: "Simple desde el primer día", title: "Primero entendemos el problema. Después hablamos de software.", step1: { title: "Nos contás qué te frena", description: "Completá el formulario y contanos dónde se pierde tiempo o control." }, step2: { title: "Detectamos la oportunidad", description: "Analizamos el proceso y te explicamos, sin vueltas, qué conviene mejorar." }, step3: { title: "Construimos la solución", description: "Desarrollamos por etapas, validando con vos para que genere valor real." } },
+    contact: { label: "El primer paso lleva un minuto", title: "¿Cuánto te está costando seguir haciéndolo manualmente?", description: "Contanos brevemente qué tarea te quita tiempo. El mensaje llegará directamente a nuestro equipo y te responderemos por email.", name: "Nombre *", namePlaceholder: "Tu nombre", email: "Email *", emailPlaceholder: "vos@tuempresa.com", business: "Empresa", businessPlaceholder: "Nombre de tu empresa (opcional)", problem: "¿Qué proceso querés mejorar? *", problemPlaceholder: "Por ejemplo: hoy copiamos pedidos de una planilla a otro sistema y perdemos varias horas por semana...", cta: "Enviar consulta", note: "Sin compromiso. No necesitás saber de tecnología: solo contanos el problema." },
+    footer: `© ${new Date().getFullYear()} Urano Software — Menos tareas manuales. Más crecimiento.`
+  }},
+  en: { translation: {
+    nav: { problems: "Sound familiar?", solutions: "Solutions", process: "How we work", contact: "Let's talk" },
+    hero: { badge: "Software that eliminates unnecessary work", title: "Your business shouldn't waste time on tasks software can do <span>for you.</span>", description: "We automate tasks, connect systems and build custom tools so your team can work faster, with fewer errors and more control.", contact: "Tell us your problem", problems: "See if this is for me", microcopy: "No commitment · We reply personally", before: "TODAY", beforeText: "Spreadsheets, manual entry, errors and disconnected systems.", after: "WITH URANO", afterText: "A simple, connected process ready to grow.", tag1: "Less wasted time", tag2: "Fewer errors", tag3: "More control" },
+    problems: { label: "The cost of doing nothing", title: "Did your business grow while your processes fell behind?", intro: "These signs seem normal until you count the hours, opportunities and money lost every month.", manual: { title: "Your team repeats tasks", description: "Copying data, updating spreadsheets and manual checks consume hours better spent selling, producing or serving customers." }, disconnected: { title: "Information is scattered", description: "Every area uses a different tool. Data is duplicated or lost, and nobody sees the full picture." }, blind: { title: "You decide late or without data", description: "You only know what happened when a problem appears. Without clear information, you react instead of anticipating." }, close: "If you recognized even one, there is already a concrete opportunity to improve.", cta: "I want to know what I can automate →" },
+    solutions: { label: "How we help", title: "We don't sell technology. We solve bottlenecks.", automation: { title: "We automate repetitive work", description: "Routine tasks happen automatically, with clear rules and without depending on one person.", result: "Result: you recover working hours" }, integration: { title: "We connect your systems", description: "We integrate platforms, databases and services so information flows without copy and paste.", result: "Result: no more duplicated data" }, custom: { title: "We build your tool", description: "Software tailored to how your company actually works—not the other way around.", result: "Result: a system your team uses" }, control: { title: "We turn data into control", description: "Dashboards and SCADA solutions help you see what matters and act early.", result: "Result: faster, clearer decisions" } },
+    process: { label: "Simple from day one", title: "First we understand the problem. Then we talk software.", step1: { title: "Tell us what's slowing you down", description: "Complete the form and explain where time or control is being lost." }, step2: { title: "We find the opportunity", description: "We analyze the process and clearly explain what is worth improving." }, step3: { title: "We build the solution", description: "We develop in stages and validate with you to create real value." } },
+    contact: { label: "The first step takes one minute", title: "How much is manual work costing you?", description: "Briefly tell us which task wastes your time. Your message will reach our team directly and we'll reply by email.", name: "Name *", namePlaceholder: "Your name", email: "Email *", emailPlaceholder: "you@yourcompany.com", business: "Company", businessPlaceholder: "Company name (optional)", problem: "Which process do you want to improve? *", problemPlaceholder: "For example: today we copy orders from a spreadsheet into another system and lose several hours every week...", cta: "Send inquiry", note: "No commitment. You don't need to know technology—just tell us the problem." },
+    footer: `© ${new Date().getFullYear()} Urano Software — Less manual work. More growth.`
+  }}
 };
 
-i18next.init(
-  {
-    lng: "es",
-    resources,
-  },
-  function () {
-    updateContent();
-  },
-);
+i18next.init({ lng: "es", resources }, updateContent);
 
 function updateContent() {
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const key = element.getAttribute("data-i18n");
-    element.textContent = i18next.t(key);
-  });
+  document.documentElement.lang = i18next.language;
+  document.querySelectorAll("[data-i18n]").forEach((el) => { el.textContent = i18next.t(el.dataset.i18n); });
+  document.querySelectorAll("[data-i18n-html]").forEach((el) => { el.innerHTML = i18next.t(el.dataset.i18nHtml); });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => { el.placeholder = i18next.t(el.dataset.i18nPlaceholder); });
 }
 
 document.getElementById("changeLang").addEventListener("click", () => {
-  const newLang = i18next.language === "es" ? "en" : "es";
-
-  i18next.changeLanguage(newLang, () => {
-    updateContent();
-    document.getElementById("changeLang").textContent =
-      newLang === "es" ? "EN" : "ES";
-  });
+  const language = i18next.language === "es" ? "en" : "es";
+  i18next.changeLanguage(language, updateContent);
+  document.getElementById("changeLang").textContent = language === "es" ? "EN" : "ES";
 });
 
-new Swiper(".servicios-swiper", {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  spaceBetween: 24,
-  loop: true,
+new Swiper(".servicios-swiper", { slidesPerView: 3, spaceBetween: 24, loop: true, autoplay: { delay: 4200, disableOnInteraction: false }, pagination: { el: ".swiper-pagination", clickable: true }, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }, breakpoints: { 0: { slidesPerView: 1 }, 700: { slidesPerView: 2 }, 1050: { slidesPerView: 3 } } });
 
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
-    768: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-    },
-  },
-});
-
-// Scroll progress bar
 const scrollBar = document.getElementById("scroll-bar");
+window.addEventListener("scroll", () => { const max = document.documentElement.scrollHeight - innerHeight; scrollBar.style.width = `${max ? (scrollY / max) * 100 : 0}%`; }, { passive: true });
 
-window.addEventListener("scroll", () => {
-  const scrollTop = window.scrollY;
-  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-  const progress = (scrollTop / docHeight) * 100;
-  scrollBar.style.width = progress + "%";
-});
-
-// Scroll reveal
-const revealElements = document.querySelectorAll(
-  "section, .hero, .card, .tech, .contact, footer, .hero-mini-card",
-);
-
+const revealElements = document.querySelectorAll("section, .hero > div, .pain-card, .process-grid article");
 revealElements.forEach((el) => el.classList.add("reveal"));
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.12 },
-);
-
+const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add("visible"); observer.unobserve(entry.target); } }), { threshold: 0.1 });
 revealElements.forEach((el) => observer.observe(el));
