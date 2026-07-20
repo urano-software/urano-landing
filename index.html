@@ -21,7 +21,7 @@
         <a href="#problemas" data-i18n="nav.problems"></a>
         <a href="#soluciones" data-i18n="nav.solutions"></a>
         <a href="#proceso" data-i18n="nav.process"></a>
-        <a class="nav-cta" href="#contacto" data-i18n="nav.contact"></a>
+        <a class="nav-cta" href="https://instagram.com/urano_software" target="_blank" rel="noopener" data-i18n="nav.contact"></a>
         <button id="changeLang" class="lang-btn" type="button" aria-label="Cambiar idioma">EN</button>
       </nav>
     </header>
@@ -32,7 +32,7 @@
         <h1 data-i18n-html="hero.title"></h1>
         <p data-i18n="hero.description"></p>
         <div class="actions">
-          <a class="btn btn-primary" href="#contacto" data-i18n="hero.contact"></a>
+          <a class="btn btn-primary instagram-link" href="https://instagram.com/urano_software" target="_blank" rel="noopener" data-i18n="hero.contact"></a>
           <a class="btn btn-secondary" href="#problemas" data-i18n="hero.problems"></a>
         </div>
         <div class="microcopy" data-i18n="hero.microcopy"></div>
@@ -63,7 +63,7 @@
         <article class="pain-card"><span class="pain-number">02</span><h3 data-i18n="problems.disconnected.title"></h3><p data-i18n="problems.disconnected.description"></p></article>
         <article class="pain-card"><span class="pain-number">03</span><h3 data-i18n="problems.blind.title"></h3><p data-i18n="problems.blind.description"></p></article>
       </div>
-      <div class="pain-cta"><p data-i18n="problems.close"></p><a href="#contacto" data-i18n="problems.cta"></a></div>
+      <div class="pain-cta"><p data-i18n="problems.close"></p><a href="https://instagram.com/urano_software" target="_blank" rel="noopener" data-i18n="problems.cta"></a></div>
     </section>
 
     <section id="soluciones">
@@ -95,20 +95,12 @@
         <div class="section-label" data-i18n="contact.label"></div>
         <h2 class="section-title" data-i18n="contact.title"></h2>
         <p data-i18n="contact.description"></p>
-        <form class="contact-form" action="https://formsubmit.co/softwareurano@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Nueva consulta desde la web de Urano Software" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input class="form-trap" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
-          <div class="form-row">
-            <label><span data-i18n="contact.name"></span><input type="text" name="Nombre" required autocomplete="name" data-i18n-placeholder="contact.namePlaceholder" /></label>
-            <label><span data-i18n="contact.email"></span><input type="email" name="Email" required autocomplete="email" data-i18n-placeholder="contact.emailPlaceholder" /></label>
-          </div>
-          <label><span data-i18n="contact.business"></span><input type="text" name="Empresa" autocomplete="organization" data-i18n-placeholder="contact.businessPlaceholder" /></label>
-          <label><span data-i18n="contact.problem"></span><textarea name="Problema o proceso a mejorar" rows="5" required minlength="15" data-i18n-placeholder="contact.problemPlaceholder"></textarea></label>
-          <button class="submit-btn" type="submit"><span data-i18n="contact.cta"></span><span aria-hidden="true">→</span></button>
-          <small data-i18n="contact.note"></small>
-        </form>
+        <div class="message-preview"><span data-i18n="contact.messageLabel"></span><strong data-i18n="contact.message"></strong></div>
+        <a class="instagram-btn" href="https://instagram.com/urano_software" target="_blank" rel="noopener" aria-label="Escribir a Urano Software por Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" /></svg>
+          <span data-i18n="contact.cta"></span>
+        </a>
+        <small data-i18n="contact.note"></small>
       </div>
     </section>
 
